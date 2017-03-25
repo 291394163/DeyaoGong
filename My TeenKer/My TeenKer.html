@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>My TeenKer</title>
+    <link rel="stylesheet" href="My TeenKer.css">
+    <script src="jquery.min.js"></script>
+    <script src="jquery.transform-0.9.3.min_.js"></script>
+    <script src="juicer-min.js"></script>
+    <script src="My TeenKer.js"></script>
+</head>
+<body>
+<div id="content">
+    <aside class="edge-wrapper">
+        <div class="edge-item call-line">
+            <div class="call-img"></div>
+            <div class="text">电话咨询</div>
+        </div>
+        <div class="edge-item online">
+            <div class="online-img"></div>
+            <div class="text">在线咨询</div>
+        </div>
+        <div class="edge-item publish">
+            <div class="publish-img"></div>
+            <div class="text">快速发布</div>
+        </div>
+    </aside>
+    <header class="nav-wrapper">
+        <div class="nav-content">
+            <div class="nav-logo"></div>
+            <div class="nav-right">
+                <div class="self-version"></div>
+                <div class="right-com become">
+                    <a href="http://form.mikecrm.com/tCjBrb" target="_blank">成为厅客</a>
+                </div>
+                <div class="right-com message">消息</div>
+                <div class="right-com user-center user-login">登录</div>
+            </div>
+        </div>
+    </header>
+    <nav>
+        <ul class="nav-item">
+
+        </ul>
+        <script type="text/juicer" id="nav-template">
+            {@each _ as item,index}
+                <li>${item.categoryName}
+                    <div class="nav-item-list">
+                        {@each item.childCategoryList as item2,index2}
+                            <div class="sort">${item2.categoryName}</div>
+                        {@/each}
+                    </div>
+                </li>
+            {@/each}
+        </script>
+    </nav>
+    <section class="large-banner">
+        <div class="large-shade">
+            <button>发布需求</button>
+        </div>
+    </section>
+    <section class="center-nav">
+        <div class="center-nav-item">
+            <div class="nav-img"></div>
+            <div class="nav-text">严选厅客</div>
+        </div>
+        <div class="center-nav-item">
+            <div class="nav-img"></div>
+            <div class="nav-text">专业高效</div>
+        </div>
+        <div class="center-nav-item">
+            <div class="nav-img"></div>
+            <div class="nav-text">高性价比</div>
+        </div>
+    </section>
+    <section class="page-wrapper">
+        <div class="special-wrapper">
+            <div class="special-title">
+                <i>品牌服务提供者</i>
+                <span>最优质的服务，最低廉的价格</span>
+            </div>
+            <div class="special-content">
+                <div class="bg-img"></div>
+                <div class="shade">
+                    <div class="shade-item1">互联网下半场：故事革命</div>
+                    <div class="shade-item2">
+                        <i>
+                            “让职业撰稿人挖掘你的品牌特性”
+                            <br>
+                            “用「讲故事」来俘获受众”
+                        </i>
+                    </div>
+                    <div class="shade-item3">￥999元起</div>
+                </div>
+            </div>
+        </div>
+        <script type="text/juicer" id="page-template">
+        {@each _ as item,index}
+            <div class="design-wrapper">
+                <div class="design-title">
+                    <div class="header">${item.categoryName}</div>
+                    <div class="nav">
+                    {@each item.childCategoryList as item1,index1}
+                        <div class="short-icon" style="background-image:url(${item1.iconUrl});"></div>
+                        <div class="text-item">${item1.categoryName}</div>
+                    {@/each}
+                    </div>
+                </div>
+
+                <div class="design-content">
+                {@each item.serviceList as item2,index2}
+                    <div class="content-item">
+                        <div class="img-box">
+                            <div class="img" style="background-image:url(${item2.url})"></div>
+                        </div>
+                        <div class="description">${item2.serviceName}</div>
+                        <div class="eg-info">
+                            <div class="user-info">
+                                <div class="user-img" style="background-image:url(${item2.headUrl});"></div>
+                                <div class="user-name">${item2.nickname}</div>
+                            </div>
+                            <div class="price">${item2.price}</div>
+                        </div>
+                    </div>
+                {@/each}
+                </div>
+                <div class="look-more">
+                    <div class="text">查看更多</div>
+                </div>
+            </div>
+        {@/each}
+        </script>
+        <div class="service-wrapper">
+            <div class="service-title">服务流程</div>
+            <ul>
+                <li>储值到平台</li>
+                <li>挑选服务</li>
+                <li>购买服务</li>
+                <li>服务完成<br>提供文件</li>
+                <li>确认交付</li>
+                <li>双方互评</li>
+            </ul>
+        </div>
+    </section>
+    <footer>
+        <div class="item-box">
+            <div class="footer-item">
+                <div class="logo"></div>
+                <div class="logo-desc">自由时代的专业主义</div>
+            </div>
+            <div class="footer-item">
+                <div class="item-title">联系我们</div>
+                <div class="item-info"><a href="#">marketing@teenker.com</a></div>
+                <div class="item-info">400-6962913</div>
+                <div class="item-info">地址：北京市朝阳区南湖西园南路北香颂1号楼702</div>
+            </div>
+            <div class="footer-item">
+                <div class="item-title">加入我们</div>
+                <div class="item-info"><a href="#">talent@teenker.com</a></div>
+            </div>
+            <div class="footer-item">
+                <div class="item-title">关注我们</div>
+                <div class="item-info">微信服务号</div>
+                <div class="weChat"></div>
+            </div>
+            <div class="footer-item">
+                <div class="item-title">使用帮助</div>
+                <div class="item-info"><a href="#">关于我们</a></div>
+                <div class="item-info">用户协议</div>
+            </div>
+        </div>
+        <div class="copyright">
+            <div class="firm">北京厅客科技有限公司©版权所有</div>
+            <div class="number"><a href="#">京ICP备15051932号-2</a></div>
+            <div class="weiBo"><a href="#"></a></div>
+        </div>
+
+    </footer>
+
+
+    <div class="customer-wrapper">
+        <div class="small-box">
+            <div class="Hi"></div>
+        </div>
+        <div class="big-box hidden2">
+            <span class="head-portrait"></span>
+            <span class="consult-free">免费咨询，快速解答</span>
+            <input type="text" placeholder="请输入电话">
+            <span class="connect-free">免费接通</span>
+            <span class="consult-online">在线咨询</span>
+            <span class="phone-number">400-6962913</span>
+            <span class="close"></span>
+        </div>
+    </div>
+</div>
+
+</body>
+</html>
