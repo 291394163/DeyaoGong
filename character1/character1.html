@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>character1</title>
+    <link rel="stylesheet" href="character1.css">
+    <link rel="shortcut icon" href="http://ac-2hn7z7r8.clouddn.com/affb5e2caf52db24.png" type="image/x-icon">
+    <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+
+</head>
+<body>
+<div id="content">
+    <section class="page1">
+        <img class="bg-img1" src="http://7xj5dd.com2.z0.glb.qiniucdn.com/00001.png" alt="">
+        <img class="bg-img2" src="http://7xj5dd.com2.z0.glb.qiniucdn.com/00002.png" alt="">
+        <img class="bg-img3" src="http://7xj5dd.com2.z0.glb.qiniucdn.com/00003.png" alt="">
+        <div class="nav-box">
+            <div class="tag-box">
+                <img class="tag" src="http://7xj5dd.com2.z0.glb.qiniucdn.com/Group3x_1.png" alt="tag">
+            </div>
+            <div class="nav-right-box">
+                <div class="weChat"></div>
+                <div class="text">厅客APP</div>
+            </div>
+        </div>
+        <div class="banner">
+            <img class="banner-img" src="http://7xj5dd.com2.z0.glb.qiniucdn.com/afef3fdfd.png" alt="">
+        </div>
+        <div class="tips">［16种人格类型测试］</div>
+        <div class="btn-start">
+            <div class="circle-line">
+                <span class="text">开始<br>测试</span>
+            </div>
+            <div class="enlarge"></div>
+        </div>
+        <div class="white-line"></div>
+        <div class="footer-text">测试来自公众号"厅客APP"</div>
+    </section>
+    <section class="page2 hide1">
+        <div class="question-box">
+            <div class="left-box">
+                <div class="numerator">1</div>
+                <div class="denominator">12</div>
+            </div>
+            <div class="right-box">
+                <script type="text/juicer" id="question-template">
+                    {@each _ as item,index}
+                    {@if index == 0}
+                        <div class="right-move">${item.question}</div>
+                    {@else}
+                        <div class="right-move hide3">${item.question}</div>
+                    {@/if}
+                    {@/each}
+                </script>
+
+            </div>
+        </div>
+        <div class="options-box">
+            <div class="flex">请选择该题</div>
+            <script type="text/juicer" id="options-template">
+                {@each _ as item,index}
+                {@if index == 0}
+                    <div class="options-move">
+                    {@each item.options as item1,index1}
+                        <div class="option-item" data-info="${item1.count}">
+                            <div class="option-img" data-img="${item1.url}"></div>
+                            <div class="option-desc">${item1.desc}</div>
+                        </div>
+                    {@/each}
+                    </div>
+                {@else}
+                    <div class="options-move hide3">
+                    {@each item.options as item1,index1}
+                        <div class="option-item" data-info="${item1.count}">
+                            <div class="option-img" data-img="${item1.url}"></div>
+                            <div class="option-desc">${item1.desc}</div>
+                        </div>
+                    {@/each}
+                    </div>
+                {@/if}
+                {@/each}
+            </script>
+        </div>
+        <div class="btn-next">下一题</div>
+    </section>
+    <section class="page3 hide1">
+        <div class="flex1">请填写姓名哦</div>
+        <div class="header-box">
+            <div class="weChat"></div>
+            <div class="text">厅客APP</div>
+        </div>
+        <div class="banner"></div>
+        <div class="input-box">
+            <input type="text" placeholder="输入名字或昵称">
+        </div>
+        <div class="btn-create">
+            <div class="circle-line">
+                <span class="text">生成<br>报告</span>
+            </div>
+            <div class="enlarge"></div>
+        </div>
+        <div class="back-box">
+            <span class="back">返回重做</span>
+        </div>
+        <div class="white-line"></div>
+        <div class="footer-text">测试来自公众号"厅客APP"</div>
+    </section>
+    <section class="page4 hide1">
+        <div class="result-title">长按图片保存到相册，可发到朋友圈或发给朋友</div>
+        <div class="result-img">
+            <img class="result-img-url" src="" alt="">
+            <div class="little-img1"></div>
+            <div class="little-img2"></div>
+            <div class="little-img3"></div>
+            <div class="little-img4"></div>
+        </div>
+
+    </section>
+</div>
+</body>
+
+<script type="text/javascript">
+    new function(){
+      var self = this;
+      self.width = 640;
+      self.fontSize = 100;
+      self.changePage = function(){
+          var _width = document.documentElement.getBoundingClientRect().width;
+          var p = self.width/self.fontSize;
+          document.getElementsByTagName('html')[0].setAttribute('style','font-size:'+_width/p+'px !important');
+      };
+      self.changePage();
+      window.addEventListener('resize',function(){self.changePage()});
+    };
+
+
+</script>
+<script src="jquery.min.js"></script>
+<script src="juicer-min.js"></script>
+<script src="character1.js"></script>
+</html>

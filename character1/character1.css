@@ -1,0 +1,418 @@
+* {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; }
+
+html, body {
+  background: #333333;
+  width: 100%;
+  height: 100%; }
+
+#content {
+  overflow: hidden;
+  width: 100%;
+  height: 100%; }
+  #content .page1 {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    transition: all 0.2s ease-in-out; }
+    #content .page1 .bg-img1 {
+      width: 1.2rem;
+      position: absolute;
+      top: 2.7rem;
+      right: 0.7rem; }
+    #content .page1 .bg-img2 {
+      width: 1.2rem;
+      position: absolute;
+      top: 6.3rem;
+      left: 1rem; }
+    #content .page1 .bg-img3 {
+      width: 2.4rem;
+      position: absolute;
+      top: 7rem;
+      right: 0.6rem; }
+    #content .page1 .nav-box {
+      width: 100%;
+      height: 0.9rem;
+      background: #F3E127;
+      border-radius: 0 0 0.2rem 0.2rem;
+      padding-top: 0.2336rem;
+      box-sizing: border-box;
+      position: relative; }
+      #content .page1 .nav-box .tag-box {
+        position: absolute;
+        width: 100%; }
+        #content .page1 .nav-box .tag-box .tag {
+          width: 0.56rem;
+          margin: 0 auto;
+          display: block; }
+      #content .page1 .nav-box .nav-right-box {
+        float: right;
+        padding-top: 0.05rem;
+        font-weight: 600; }
+        #content .page1 .nav-box .nav-right-box .weChat {
+          float: left;
+          width: 0.422rem;
+          height: 0.3451rem;
+          background: url("http://7xj5dd.com2.z0.glb.qiniucdn.com/Fill_193x_1.png") no-repeat;
+          background-size: cover; }
+        #content .page1 .nav-box .nav-right-box .text {
+          font-size: 0.24rem;
+          color: #323333;
+          float: right;
+          padding: 0.06rem 0.4rem 0 0.15rem; }
+    #content .page1 .banner {
+      margin: 1rem auto 0;
+      width: 6.02rem;
+      height: 4rem;
+      background: url("http://7xj5dd.com2.z0.glb.qiniucdn.com/Group_23x_1.png") no-repeat;
+      background-size: cover;
+      overflow: hidden; }
+      #content .page1 .banner .banner-img {
+        width: 5.1rem;
+        display: block;
+        margin: 0.9rem auto 0; }
+    #content .page1 .tips {
+      margin: 0.5rem auto;
+      font-size: 0.32rem;
+      color: #A19439;
+      text-align: center;
+      position: relative;
+      z-index: 100; }
+    #content .page1 .btn-start {
+      width: 1.59rem;
+      height: 1.59rem;
+      margin: 0.5rem auto;
+      font-size: 0.36rem;
+      background: #FFEA00;
+      border-radius: 50%;
+      z-index: 100;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #content .page1 .btn-start .circle-line {
+        width: 1.45rem;
+        height: 1.45rem;
+        border: 1px solid #C3B415;
+        border-radius: 50%;
+        margin: 0.06rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #content .page1 .btn-start .circle-line .text {
+          font-size: 0.36rem;
+          font-weight: 600;
+          width: 0.72rem; }
+      #content .page1 .btn-start .enlarge {
+        width: 1.5rem;
+        height: 1.5rem;
+        box-shadow: 0 0 20px 0 #F3E127;
+        position: absolute;
+        top: 0.045rem;
+        left: 0.045rem;
+        border-radius: 100%;
+        animation: myScale 2s ease-in-out infinite;
+        z-index: 10; }
+    #content .page1 .white-line {
+      width: 0.3rem;
+      height: 0.04rem;
+      background: white;
+      margin: 1rem auto 0.5rem; }
+    #content .page1 .footer-text {
+      font-size: 0.24rem;
+      color: white;
+      text-align: center; }
+  #content .page2 {
+    width: 100%;
+    height: 100%; }
+    #content .page2 .question-box {
+      margin: .3rem .31rem .4rem;
+      display: flex; }
+      #content .page2 .question-box .left-box {
+        width: 1.05rem;
+        height: 1.05rem;
+        background: url("http://7xj5dd.com2.z0.glb.qiniucdn.com/Line3x_1.png") no-repeat center center #FFEA00;
+        background-size: cover;
+        font-size: 0.4rem; }
+        #content .page2 .question-box .left-box .numerator {
+          padding-left: 0.1rem; }
+        #content .page2 .question-box .left-box .denominator {
+          text-align: right;
+          padding-right: 0.1rem; }
+      #content .page2 .question-box .right-box {
+        flex: 1;
+        border: 1px solid yellow;
+        font-size: 0.35rem;
+        color: yellow;
+        font-weight: 500;
+        position: relative;
+        overflow: hidden; }
+        #content .page2 .question-box .right-box .right-move {
+          padding-left: 0.2rem;
+          position: absolute;
+          left: 0;
+          top: 0;
+          transition: all 0.3s linear; }
+    #content .page2 .options-box {
+      width: 5.02rem;
+      height: 7rem;
+      margin: 0 auto;
+      font-size: 0;
+      position: relative; }
+      #content .page2 .options-box .flex {
+        width: 2rem;
+        height: 1rem;
+        text-align: center;
+        line-height: 1rem;
+        color: white;
+        border-radius: 0.3rem;
+        position: absolute;
+        left: 50%;
+        margin-left: -1rem;
+        top: 47%;
+        margin-top: -0.5rem;
+        background: black;
+        opacity: 0.5;
+        z-index: 100;
+        font-size: 0.3rem;
+        transform: scale(0);
+        transition: all 0.2s linear; }
+      #content .page2 .options-box .options-move {
+        position: absolute;
+        top: 0;
+        left: 0;
+        transition: all 0.3s ease-in-out; }
+        #content .page2 .options-box .options-move .option-item {
+          padding: 0.1rem;
+          margin-bottom: 0.22rem;
+          width: 2.2rem;
+          height: 3rem;
+          background: #4D4D4D;
+          display: inline-block;
+          color: white; }
+          #content .page2 .options-box .options-move .option-item .option-img {
+            width: 100%;
+            height: 80%;
+            background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/1E_concert_.jpg);
+            background-size: cover; }
+          #content .page2 .options-box .options-move .option-item .option-desc {
+            height: 20%;
+            font-size: 0.25rem;
+            white-space: nowrap;
+            display: flex;
+            align-items: center; }
+        #content .page2 .options-box .options-move .bg-change {
+          background: yellow;
+          color: black;
+          box-shadow: 0 0 0.2rem #FFEA00; }
+      #content .page2 .options-box .option-item:nth-child(2n+1) {
+        margin-right: 0.22rem; }
+    #content .page2 .btn-next {
+      width: 2rem;
+      height: 0.5rem;
+      background: yellow;
+      margin: 0 auto;
+      border-radius: 0.1rem;
+      font-size: 0.4rem;
+      text-align: center; }
+  #content .page3 {
+    width: 100%;
+    height: 100%;
+    position: relative; }
+    #content .page3 .flex1 {
+      width: 2rem;
+      height: 1rem;
+      text-align: center;
+      line-height: 1rem;
+      color: white;
+      border-radius: 0.3rem;
+      position: absolute;
+      left: 50%;
+      margin-left: -1rem;
+      top: 47%;
+      margin-top: -0.5rem;
+      background: black;
+      opacity: 0.5;
+      z-index: 100;
+      font-size: 0.3rem;
+      transform: scale(0);
+      transition: all 0.2s linear; }
+    #content .page3 .header-box {
+      margin: 0.28rem 0 1rem;
+      font-weight: 600;
+      overflow: hidden; }
+      #content .page3 .header-box .weChat {
+        width: 0.422rem;
+        height: 0.3451rem;
+        background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/Fill_23x_1.png) no-repeat;
+        background-size: cover;
+        float: left;
+        margin-left: 4.3rem; }
+      #content .page3 .header-box .text {
+        font-size: 0.24rem;
+        color: #cccccc;
+        float: right;
+        padding: 0.06rem 0.4rem 0 0.15rem; }
+    #content .page3 .banner {
+      width: 5.62rem;
+      height: 1.5rem;
+      background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/asdfew23fsf.png) no-repeat;
+      background-size: contain;
+      margin: 0 auto 0.6rem; }
+    #content .page3 .input-box {
+      text-align: center; }
+      #content .page3 .input-box input {
+        width: 60%;
+        height: 1rem;
+        border: 0.02rem solid yellow;
+        background: #333;
+        font-size: 0.4rem; }
+    #content .page3 .btn-create {
+      width: 1.59rem;
+      height: 1.59rem;
+      margin: 0.5rem auto;
+      font-size: 0.36rem;
+      background: #FFEA00;
+      border-radius: 50%;
+      z-index: 100;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center; }
+      #content .page3 .btn-create .circle-line {
+        width: 1.45rem;
+        height: 1.45rem;
+        border: 1px solid #C3B415;
+        border-radius: 50%;
+        margin: 0.06rem;
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        #content .page3 .btn-create .circle-line .text {
+          font-size: 0.36rem;
+          font-weight: 600;
+          width: 0.72rem; }
+      #content .page3 .btn-create .enlarge {
+        width: 1.5rem;
+        height: 1.5rem;
+        box-shadow: 0 0 20px 0 #F3E127;
+        position: absolute;
+        top: 0.045rem;
+        left: 0.045rem;
+        border-radius: 100%;
+        animation: myScale 2s ease-in-out infinite;
+        z-index: 10; }
+    #content .page3 .back-box {
+      text-align: center;
+      font-size: 0.4rem; }
+      #content .page3 .back-box .back {
+        font-size: 0.4rem;
+        color: yellow; }
+    #content .page3 .white-line {
+      width: 0.3rem;
+      height: 0.04rem;
+      background: white;
+      margin: 1rem auto 0.5rem; }
+    #content .page3 .footer-text {
+      font-size: 0.24rem;
+      color: white;
+      text-align: center; }
+  #content .page4 {
+    width: 100%;
+    height: 100%;
+    background: white;
+    text-align: center; }
+    #content .page4 .result-title {
+      font-size: 0.24rem;
+      padding-top: 0.5rem;
+      display: inline-block;
+      position: relative; }
+    #content .page4 .result-title:before {
+      position: absolute;
+      content: '';
+      background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/hebibg_1.png) no-repeat left;
+      width: 0.18rem;
+      height: 0.18rem;
+      background-size: cover;
+      left: -0.3rem;
+      bottom: -0.05rem; }
+    #content .page4 .result-title:after {
+      position: absolute;
+      content: '';
+      background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/hebibg_1.png) no-repeat right;
+      width: 0.18rem;
+      height: 0.18rem;
+      background-size: cover;
+      right: -0.3rem;
+      bottom: -0.05rem; }
+    #content .page4 .result-img {
+      margin: 0.3rem 0.2rem;
+      border: .05rem dashed #7e7e7e;
+      position: relative;
+      padding: 0.16rem;
+      height: 80%; }
+      #content .page4 .result-img .result-img-url {
+        width: 100%;
+        height: 100%; }
+      #content .page4 .result-img .little-img1 {
+        position: absolute;
+        width: 0.2732rem;
+        height: 0.2179rem;
+        background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/jiantdao_1.png) no-repeat;
+        background-size: cover;
+        left: 1.17rem;
+        top: -0.13rem; }
+      #content .page4 .result-img .little-img2 {
+        position: absolute;
+        width: .2732rem;
+        height: .2179rem;
+        background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/jiantdao_1.png) no-repeat;
+        background-size: cover;
+        right: -.15rem;
+        top: 1.46rem;
+        transform: rotate(90deg);
+        -webkit-transform: rotate(90deg); }
+      #content .page4 .result-img .little-img3 {
+        position: absolute;
+        width: .2732rem;
+        height: .2179rem;
+        background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/jiantdao_1.png) no-repeat;
+        background-size: cover;
+        left: -.15rem;
+        top: 6.61rem;
+        transform: rotate(-90deg);
+        -webkit-transform: rotate(-90deg); }
+      #content .page4 .result-img .little-img4 {
+        position: absolute;
+        width: .2732rem;
+        height: .2179rem;
+        background: url(http://7xj5dd.com2.z0.glb.qiniucdn.com/jiantdao_1.png) no-repeat;
+        background-size: cover;
+        right: .86rem;
+        bottom: -.13229rem;
+        transform: rotate(180deg);
+        -webkit-transform: rotate(180deg); }
+
+.hide1 {
+  display: none; }
+
+.hide3 {
+  transform: translate3d(120%, 0, 0); }
+
+.hide4 {
+  transform: translate3d(-120%, 0, 0); }
+
+.show {
+  transform: scale(1) !important; }
+
+@keyframes myScale {
+  0% {
+    transform: scale(1); }
+  50% {
+    transform: scale(1.05); }
+  100% {
+    transform: scale(1); } }
+
+/*# sourceMappingURL=character1.css.map */
